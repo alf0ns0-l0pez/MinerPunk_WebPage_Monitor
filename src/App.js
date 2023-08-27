@@ -1,8 +1,12 @@
+import './App.css'
+import NavBar from './components/NavBar';
+import Overview from './components/overview/Overview';
 
 export default function App() {
   return (
-    <h1 >
-      test
-    </h1>
+    <div >
+      <NavBar/>
+<Overview/>
+    </div>
   );
 }

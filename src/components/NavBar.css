@@ -1,0 +1,36 @@
+.bar{
+    background-color: #22262b;
+}
+ul {
+    list-style-type: none;
+    /*margin: 0;*/
+    max-width:1200px;
+    margin:auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #22262b;
+    height: 40px;
+    font-size: small;
+}
+
+li {
+    float: left;
+    display: block;
+    color: #c6ccd2;
+    text-align: center;
+    padding: 10px 20px;
+    height: 100%;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #111;
+}
+
+.li-right{
+    float: right;
+    background-color: #04AA6D;
+}
+.li-right:hover{
+    background-color: #026e47;
+}
