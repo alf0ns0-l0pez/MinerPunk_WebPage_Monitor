@@ -1,36 +1,40 @@
-.bar{
+.navbar{
     background-color: #22262b;
 }
-ul {
+ul.nav {
     list-style-type: none;
-    /*margin: 0;*/
     max-width:1200px;
     margin:auto;
     padding: 0;
-    overflow: hidden;
     background-color: #22262b;
     height: 40px;
     font-size: small;
 }
 
-li {
+li.nav {
+    cursor: grab;
     float: left;
+    margin-top: 2px;
     display: block;
     color: #c6ccd2;
     text-align: center;
-    padding: 10px 20px;
-    height: 100%;
+    padding: 10px;
+    
     text-decoration: none;
 }
 
-li:hover {
+li.nav:hover {
     background-color: #111;
 }
 
-.li-right{
+li.right{
     float: right;
-    background-color: #04AA6D;
+    height: 40px;
 }
-.li-right:hover{
-    background-color: #026e47;
+.letters-logo{
+    float: right;
+    height: 40px;
+}
+@media screen and (max-width: 600px) {
+    .letters-logo:not(:first-child) {display: none;}
 }

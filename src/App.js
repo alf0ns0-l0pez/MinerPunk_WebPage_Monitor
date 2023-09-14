@@ -1,12 +1,14 @@
-import './App.css'
+import { useState } from 'react';
 import NavBar from './components/NavBar';
-import Overview from './components/overview/Overview';
+import HeadMenu from './components/overview/HeadMenu';
 
 export default function App() {
+  const [navValue, setNavValue] = useState(null);
+  console.log(navValue)
   return (
     <div >
-      <NavBar/>
-<Overview/>
+      <NavBar setNavValue={setNavValue}/>
+      <HeadMenu/>
     </div>
   );
 }
