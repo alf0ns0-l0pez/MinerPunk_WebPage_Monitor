@@ -1,36 +1,146 @@
-
-ul.head {
-    list-style-type: none;
-    max-width:1200px;
-    margin:auto;
-    padding: 0;
-    background-color: #16191d;
-    font-size: small;
-    height: 100%;
-}
-
-li.head {
-    float: left;
-    margin: 15px 10px;
-    padding: 10px;
-    color: #f0f0f0;
-    background-color: #22262b;
-    text-align: center;
-    border-radius: 3px;
-    width: 80px;
+/*************************** OverView **************************/
+#overview {
+  width: 100%;
+  font-size: 14px;
 
 }
-li.head:hover{
-    background-color: #111;
+
+#overview ul {
+  border-radius: 6px;
+  list-style: none;
+  text-decoration: none;
+  margin: 0px auto;
+  max-width: 1200px;
+  background-color: #22262b;
+  padding: 10px 0px 10px 0px;
 }
-p.title{
-    text-align: left;
-    margin:0;
-    padding-top: 5px;
-    font-size: medium;
+
+#overview>ul>li {
+  width: 1170px;
+  margin: 7px 15px;
+  border-radius: 6px;
 }
-p.value{
-    text-align: left;
-    margin:0;
-    font-size: medium;
+
+#overview>ul>li>ul {
+  height: 40px;
+  background-color: #363d45;
+}
+
+#overview>ul>li>ul>li {
+  float: left;
+  padding-left: 10px;
+}
+
+#overview>ul>li>ul>li>h2 {
+  padding-top: 5px;
+}
+
+#overview>ul>li>ul>li:last-child {
+  float: right;
+  padding-right: 10px;
+}
+
+/*************************** BoardDash **************************/
+.header-factory {
+  display: grid;
+  grid-template-columns: 90px 50% 1fr 50px;
+  background-color: #363d45;
+  border-radius: 6px;
+  border: 2px solid rgb(156, 156, 156);
+}
+
+.board-relay {
+  display: grid;
+
+  grid-template-columns: 50px 50% 1fr 50px;
+  grid-template-rows: 50px 50px 50px 70px;
+  gap:20px; 
+  background-color: #363d45;
+  border-radius: 6px;
+  padding-bottom: 20px;
+}
+
+.board-motor {
+  display: grid;
+  grid-template-columns: 50px 50% 1fr 50px;
+  grid-template-rows: 50px 60px 100px 50px;
+  background-color: #363d45;
+  border-radius: 6px;
+}
+
+.board-logo {
+  padding: 5px;
+}
+
+.drop-form {
+  padding: 5px;
+  grid-column: 4;
+}
+
+.drop-form:hover {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+.title-board {
+  padding: 10px;
+}
+
+.title-factory {
+  padding-left: 10px;
+  line-height: 3;
+  height: 45px;
+}
+
+.relay-list {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  background-color: #22262b;
+  border-radius: 6px;
+}
+
+.relay-list h1 {
+  border: 2px solid white;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  align-self: center;
+  justify-self: center;
+}
+
+.relay-list h1:hover {
+  background-color: rgb(0, 89, 255);
+}
+
+.board-relay form {
+  margin-top: 1px;
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 50px 50px 100px 50px 50px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.board-relay form h3 {
+  align-self: center;
+  justify-self: center;
+}
+
+.board-relay form input {
+  background-color: #22262b;
+  text-align: center;
+  color: white;
+  width: 60px;
+  height: 18px;
+  align-self: center;
+  justify-self: center;
+  border-radius: 4px;
+}
+
+.board-details {
+  grid-column: 2/4;
+  background-color: #22262b;
+  border-radius: 6px;
+  padding: 5px;
 }
