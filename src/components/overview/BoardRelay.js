@@ -14,32 +14,33 @@ export default function BoardRelay(props) {
                     <div className='board-logo'><img src=".\images\relayNormal.svg" alt="Logo" height='40px' /></div>
                     <h2 className='title-board'>{`${board.BOARDTYPE}  #${board.ID} | ${board.DESCRIPTION}`}</h2>
                     <div className='drop-form' onClick={() => setExpandView(true)}>
-                        <img src=".\images\relayNormal.svg" alt="Logo" height='40px' />
+                        <img src=".\images\hidden.svg" alt="Logo" height='40px' />
                     </div>
-                </section> :
+                </section>
+                :
                 <section className='board-relay'>
                     <div className='board-logo'><img src=".\images\relayNormal.svg" alt="Logo" height='40px' /></div>
                     <h2 className='title-board'>{`${board.BOARDTYPE}  #${board.ID} | ${board.DESCRIPTION}`}</h2>
                     <div className='drop-form' onClick={() => setExpandView(false)}>
-                        <img src=".\images\relayNormal.svg" alt="Logo" height='40px' />
+                        <img src=".\images\show.svg" alt="Logo" height='40px' />
                     </div>
                     <h3 style={{ gridColumn: '2/4' }}>OPTO INPUTS:</h3>
                     <div className='opto-list'>
-                        <h1 style={{ borderColor: 'red' }}>1</h1>
-                        <h1 style={{ borderColor: 'red' }}>2</h1>
-                        <h1 style={{ borderColor: 'green' }}>3</h1>
-                        <h1 style={{ borderColor: 'green' }}>4</h1>
+                        <img src=".\images\optoLedOn.svg" alt="Logo" height='50px' />
+                        <img src=".\images\optoLedOn.svg" alt="Logo" height='50px' />
+                        <img src=".\images\optoLedOff.svg" alt="Logo" height='50px' />
+                        <img src=".\images\optoLedOff.svg" alt="Logo" height='50px' />
                     </div>
                     <h3 style={{ gridColumn: '2/4' }}>RELAY OUTPUTS:</h3>
                     <div className='relay-list'>
-                        <h1 style={{ borderColor: 'red' }}>1</h1>
-                        <h1 style={{ borderColor: 'red' }}>2</h1>
-                        <h1 style={{ borderColor: 'green' }}>3</h1>
-                        <h1 style={{ borderColor: 'green' }}>4</h1>
-                        <h1 style={{ borderColor: 'red' }}>5</h1>
-                        <h1 style={{ borderColor: 'red' }}>6</h1>
-                        <h1 style={{ borderColor: 'green' }}>7</h1>
-                        <h1 style={{ borderColor: 'red' }}>8</h1>
+                        <img src=".\images\relayClose.svg" alt="Logo" height='50px' />
+                        <img src=".\images\relayClose.svg" alt="Logo" height='50px' />
+                        <img src=".\images\relayClose.svg" alt="Logo" height='50px' />
+                        <img src=".\images\relayClose.svg" alt="Logo" height='50px' />
+                        <img src=".\images\relayOpen.svg" alt="Logo" height='50px' />
+                        <img src=".\images\relayOpen.svg" alt="Logo" height='50px' />
+                        <img src=".\images\relayOpen.svg" alt="Logo" height='50px' />
+                        <img src=".\images\relayOpen.svg" alt="Logo" height='50px' />
                     </div>
                     <form>
                         <h3 style={{ gridColumn: '1/3' }}>NO/NC</h3>

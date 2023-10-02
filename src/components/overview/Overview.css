@@ -39,6 +39,9 @@
   float: right;
   padding-right: 10px;
 }
+.open-door:hover {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
 
 /*************************** BoardDash **************************/
 .header-factory {
@@ -104,20 +107,6 @@
   background-color: #22262b;
   border-radius: 6px;
 }
-.relay-list h1,
-.opto-list h1 {
-  border: 2px solid white;
-  background-color: rgb(0, 0, 0);
-  border-radius: 8px;
-  text-align: center;
-  width: 32px;
-  height: 32px;
-  align-self: center;
-  justify-self: center;
-}
-.relay-list h1:hover {
-  background-color: rgb(0, 89, 255);
-}
 .board-relay form {
   grid-column: 2/4;
   display: grid;
@@ -154,19 +143,6 @@
   grid-template-columns: repeat(16, 1fr);
   background-color: #22262b;
   border-radius: 6px;
-}
-.sensor-list h1 {
-  border: 2px solid white;
-  background-color: rgb(0, 0, 0);
-  border-radius: 8px;
-  text-align: center;
-  width: 32px;
-  height: 32px;
-  align-self: center;
-  justify-self: center;
-}
-.sensor-list h1:hover {
-  background-color: rgb(0, 89, 255);
 }
 .board-motor form {
   grid-column: 2/4;
